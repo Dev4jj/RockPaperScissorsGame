@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+#mainTitle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.scoreboard {
+    margin-top: 10px;
+}
+
+.score {
+    font-size: 20px;
+}
+
+#myChoiceImg {
+    transform: scaleX(-1);
+    rotate: 90deg;
+    width: 200px;
+    height: auto;
+}
+
+#computerImg {
+    rotate: -90deg;
+    width: 200px;
+    height: auto;
+}
+
+#choiceTitle {
+    text-align: center;
+}
+
+div>button {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btnClicked {
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+/*winner and loser html*/
+
+@keyframes results {
+    0% {
+        font-size: 40px;
+    }
+
+    50% {
+        font-size: 50px;
+    }
+
+    100% {
+        font-size: 40px;
+    }
+}
+
+.winner {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    animation: results 3s infinite;
+}
+
+.star {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.loser {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    animation: lost 3s forwards;
+}
+
+@keyframes lost {
+
+    15% {
+        transform: rotate(40deg);
+    }
+
+    100% {
+        transform: translateY(20vh) rotate(40deg);
+        ;
+    }
+
+}
+
+iframe {
+    display: none;
+}
